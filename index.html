@@ -23,9 +23,10 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <!--dark mode css file-->
+  <link rel="stylesheet" href="css/dark-mode.css">
 
 </head>
 
@@ -82,7 +83,23 @@
     </div>
   </div>
   <!--/ Intro Skew End /-->
+  <!--dark mode switch-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="theme-switch-wrapper mt-5">
+          <label class="theme-switch" for="darkSwitch">
+            <input type="checkbox" data-toggle="toggle" id="darkSwitch">
+            <div class="slider round"></div>
+          </label>
+          <em>Night mode!</em>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--dark mode switch end-->
 
+  <!--about section start-->
   <section id="about" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
@@ -148,8 +165,9 @@
       </div>
     </div>
   </section>
+  <!--about section end-->
 
-  <!--/ Section Services Star /-->
+  <!--/ Section Services Start /-->
   <section id="service" class="services-mf route">
     <div class="container">
       <div class="row">
@@ -249,6 +267,8 @@
     </div>
   </section>
   <!--/ Section Services End /-->
+
+  <!--/ Section experience start /-->
   <section id="experience" class="experinece-mf route">
     <div class="section-counter paralax-mf bg-image" style="background-image: url(https://res.cloudinary.com/dwltrduan/image/upload/v1575304752/thrt_rpnhac.jpg)">
       <div class="overlay-mf"></div>
@@ -302,8 +322,9 @@
       </div>
     </div>
   </section>
+  <!--/ Section experience start /-->
 
-  <!--/ Section Portfolio Star /-->
+  <!--/ Section work Start /-->
   <section id="work" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
@@ -326,21 +347,6 @@
               <div class="work-img">
                 <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg" alt="" class="img-fluid">
               </div>
-              <!--<div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Pranal-Shubhdeep</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Wedding</span> / <span class="w-date">14  Sept. 2019</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
             </a>
           </div>
         </div>
@@ -351,21 +357,6 @@
               <div class="work-img">
                 <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304748/sixth_kbjlq1.jpg" alt="" class="img-fluid">
               </div>
-              <!--<div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
             </a>
           </div>
         </div>
@@ -376,21 +367,6 @@
               <div class="work-img">
                 <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/third_qjb1eq.jpg" alt="" class="img-fluid">
               </div>
-              <!--<div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
             </a>
           </div>
         </div>
@@ -401,21 +377,6 @@
               <div class="work-img">
                 <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304747/eight_xc7n84.jpg" alt="" class="img-fluid">
               </div>
-              <!--<div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
             </a>
           </div>
         </div>
@@ -426,21 +387,6 @@
               <div class="work-img">
                 <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304743/fifth_hvtlza.jpg" alt="" class="img-fluid">
               </div>
-              <!--<div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
             </a>
           </div>
         </div>
@@ -451,21 +397,6 @@
               <div class="work-img">
                 <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304739/seven_ex2aga.jpg" alt="" class="img-fluid">
               </div>
-              <!--<div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
             </a>
           </div>
         </div>
@@ -563,9 +494,9 @@
       </div>
     </div>
   </section>
-  <!--/ Section Portfolio End /-->
+  <!--/ Section work End /-->
 
-  <!--/ Section Testimonials Star /-->
+  <!--/ Section Testimonials Start /-->
   <section id="clients" class="clients-mf route">
     <div class="testimonials paralax-mf bg-image" style="background-image: url(https://res.cloudinary.com/dwltrduan/image/upload/v1575307299/up2_pobvoj.jpg)">
       <div class="overlay-mf"></div>
@@ -633,9 +564,10 @@
       </div>
     </div>
   </section>
+  <!--/ Section Testimonials end /-->
 
-  <!--/ Section Blog Star /-->
-  <section id="blog" class="blog-mf sect-pt4 route">
+  <!--/ Section google map Start /-->
+  <section class="blog-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -673,81 +605,11 @@
           </style>
         </div>
       </div>
-      <!--<div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Team
-            </h3>
-            <p class="subtitle-a">
-              Professionals.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>-->
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-91db93b1-ce84-48d7-b40f-aea8e325f9de"></div>
-      <!--<div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <img src="img/profile.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Photographer-editor</h6>
-                </div>
-              </div>
-              <h3 class="card-title">Deepak parab</h3>
-              <p class="card-description">
-                Founder of The ' Frame Art India '
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <img src="img/profile.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Photographer-videographer</h6>
-                </div>
-              </div>
-              <h3 class="card-title">Deepak parab</a></h3>
-              <p class="card-description">
-                Founder of The ' Frame Art India '
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <img src="img/profile.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Photographer-cinematographer</h6>
-                </div>
-              </div>
-              <h3 class="card-title">Deepak parab</a></h3>
-              <p class="card-description">
-                Founder of The ' Frame Art India '
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>-->
     </div>
   </section>
-  <!--/ Section Blog End /-->
-
+  <!--/ Section google map End /-->
 
 
   <!--/ Section Contact-Footer Star /-->
@@ -850,6 +712,8 @@
     </footer>
   </section>
   <!--/ Section Contact-footer End /-->
+
+  <!--/ Section floating button start /-->
   <div class="sticky-container">
     <ul class="sticky">
       <li>
@@ -893,6 +757,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="css/dark-mode-switch.min.js"></script>
 
 </body>
 </html>
