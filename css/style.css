@@ -110,7 +110,6 @@ a:hover {
 }
 
 /*--/ Sections /--*/
-
 .sect-4 {
   padding: 4rem 0;
 }
@@ -124,7 +123,6 @@ a:hover {
 }
 
 /*--/ Title s /--*/
-
 .title-s {
   font-weight: 600;
   color: #1e1e1e;
@@ -132,7 +130,6 @@ a:hover {
 }
 
 /*--/ Title A /--*/
-
 .title-box {
   margin-bottom: 4rem;
 }
@@ -155,7 +152,6 @@ a:hover {
 }
 
 /*--/ Title Left /--*/
-
 .title-box-2 {
   margin-bottom: 3rem;
 }
@@ -175,7 +171,6 @@ a:hover {
 }
 
 /*------/ Box /------*/
-
 .box-pl2 {
   padding-left: 2rem;
 }
@@ -190,7 +185,6 @@ a:hover {
 }
 
 /*------/ Socials /------*/
-
 .socials {
   padding: 1.5rem 0;
 }
@@ -218,7 +212,6 @@ a:hover {
 }
 
 /*------/ Ul resect /------*/
-
 .ul-resect,
 .socials ul,
 .list-ico,
@@ -241,7 +234,6 @@ a:hover {
 }
 
 /*------/ Ico Circle /------*/
-
 .ico-circle {
   height: 100px;
   width: 100px;
@@ -255,7 +247,6 @@ a:hover {
 }
 
 /*------/ Owl Carousel /------*/
-
 .owl-theme .owl-dots {
   text-align: center;
   margin-top: 18px;
@@ -286,7 +277,6 @@ a:hover {
 }
 
 /*--/ Scrolltop s /--*/
-
 .scrolltop-mf {
   position: relative;
   display: none;
@@ -312,7 +302,6 @@ a:hover {
 }
 
 /* Back to top button */
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -336,7 +325,6 @@ a:hover {
 }
 
 /* Prelaoder */
-
 #preloader {
   position: fixed;
   top: 0;
@@ -389,7 +377,6 @@ a:hover {
 /*======================================
 //--//-->   NAVBAR
 ======================================*/
-
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
@@ -437,12 +424,12 @@ a:hover {
   width: 35px;
 }
 
-.navbar-b.navbar-trans .show > .nav-link:before,
-.navbar-b.navbar-trans .active > .nav-link:before,
+.navbar-b.navbar-trans .show>.nav-link:before,
+.navbar-b.navbar-trans .active>.nav-link:before,
 .navbar-b.navbar-trans .nav-link.show:before,
 .navbar-b.navbar-trans .nav-link.active:before,
-.navbar-b.navbar-reduce .show > .nav-link:before,
-.navbar-b.navbar-reduce .active > .nav-link:before,
+.navbar-b.navbar-reduce .show>.nav-link:before,
+.navbar-b.navbar-reduce .active>.nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
   width: 35px;
@@ -456,8 +443,8 @@ a:hover {
   color: #fff;
 }
 
-.navbar-b.navbar-trans .show > .nav-link,
-.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .show>.nav-link,
+.navbar-b.navbar-trans .active>.nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
   color: #fff;
@@ -482,8 +469,8 @@ a:hover {
   color: #0078ff;
 }
 
-.navbar-b.navbar-reduce .show > .nav-link,
-.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .show>.nav-link,
+.navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: #0078ff;
@@ -532,7 +519,6 @@ a:hover {
 }
 
 /*--/ Hamburger Navbar /--*/
-
 .navbar-toggler {
   position: relative;
 }
@@ -589,7 +575,6 @@ a:hover {
 /*======================================
 //--//-->   INTRO
 ======================================*/
-
 .intro {
   height: 100vh;
   position: relative;
@@ -660,7 +645,6 @@ a:hover {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -693,7 +677,6 @@ a:hover {
 /*======================================
 //--//-->   SERVICES
 ======================================*/
-
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
@@ -732,7 +715,6 @@ a:hover {
 /*======================================
 //--//-->   COUNTER
 ======================================*/
-
 .counter-box {
   color: #fff;
   text-align: center;
@@ -757,7 +739,6 @@ a:hover {
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
-
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -813,7 +794,6 @@ a:hover {
 /*======================================
 //--//-->   TESTIMONIALS
 ======================================*/
-
 .testimonials .owl-carousel .owl-item img {
   width: auto;
 }
@@ -855,7 +835,6 @@ a:hover {
 /*======================================
 //--//-->   BLOG
 ======================================*/
-
 .card-blog .card-body {
   position: relative;
 }
@@ -910,7 +889,6 @@ a:hover {
 /*======================================
 //--//-->   BLOG-SINGLE
 ======================================*/
-
 .post-box,
 .form-comments,
 .box-comments,
@@ -953,7 +931,6 @@ a:hover {
 }
 
 /*------/ Comments /------*/
-
 .box-comments .list-comments li {
   padding-bottom: 40px;
 }
@@ -992,7 +969,6 @@ a:hover {
 }
 
 /*------/ Sidebar /------*/
-
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
@@ -1046,7 +1022,6 @@ a:hover {
 /*======================================
 //--//-->   CONTACT
 ======================================*/
-
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
@@ -1058,7 +1033,6 @@ a:hover {
 /*======================================
 //--//-->   FOOTER
 ======================================*/
-
 footer {
   text-align: center;
   color: #fff;
@@ -1080,7 +1054,6 @@ footer .credits a {
 /*======================================
 //--//-->   CONtaCT FORM
 ======================================*/
-
 #sendmessage {
   color: #0078ff;
   border: 1px solid #0078ff;
@@ -1115,12 +1088,101 @@ footer .credits a {
   font-size: 13px;
 }
 
+/* Floating Social Media Bar Style Starts Here */
+@media screen and (min-width: 780px) {
+  .sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -130px;
+    top: 230px;
+    width: 210px;
+    z-index: 1100;
+  }
 
+  .sticky li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #efefef;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+  }
 
+  .sticky li:hover {
+    margin-left: -115px;
+  }
+
+  .sticky li img {
+    float: left;
+    margin: 5px 4px;
+    margin-right: 5px;
+  }
+
+  .sticky li p {
+    padding-top: 5px;
+    margin: 0px;
+    line-height: 16px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sticky-container {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: -130px;
+    top: 230px;
+    width: 210px;
+    z-index: 1100;
+    display: none;
+  }
+
+  .sticky li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #efefef;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    display: none;
+  }
+
+  .sticky li:hover {
+    margin-left: -115px;
+  }
+
+  .sticky li img {
+    float: left;
+    margin: 5px 4px;
+    margin-right: 5px;
+    display: none;
+  }
+
+  .sticky li p {
+    padding-top: 5px;
+    margin: 0px;
+    line-height: 16px;
+    font-size: 11px;
+    display: none;
+  }
+}
+
+/* Floating Social Media Bar Style Ends Here */
 /*======================================
 //--//-->   BUTTON
 ======================================*/
-
 .button {
   display: inline-block;
   padding: .3rem .6rem;
