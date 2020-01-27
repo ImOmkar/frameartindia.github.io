@@ -171,6 +171,29 @@ a:hover {
   color: #4e4e4e;
 }
 
+.count{
+  margin-top: 30px;
+  margin: 40px 0;
+}
+
+.countd{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  margin: 0 20px;
+  font-size: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.countd span{
+  display: block;
+  font-size: 20px;
+  margin-top: 14px;
+}
+
+
 .line-mf {
   width: 40px;
   height: 5px;

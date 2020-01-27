@@ -5,8 +5,16 @@
   <meta charset="utf-8">
   <title>The Frame Art India</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+
+  <meta property="og:title" content="The Frame Art India Production House"/>
+	<meta property="og:image" content="img/Logo.png"/>
+	<meta property="og:url" content="https://theframeartindia.com"/>
+	<meta property="og:site_name" content="The Frame Art India"/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="The Frame Art India" />
+	<meta name="twitter:image" content="img/Logo.png" />
+	<meta name="twitter:url" content="https://theframeartindia.com" />
+	<meta name="twitter:card" content="img/Logo.png" />
 
   <!-- Favicons -->
   <link href="img/icon1.png" rel="icon">
@@ -24,6 +32,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <!--dark mode css file-->
@@ -77,12 +86,29 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h1 class="intro-title mb-4" style="font-family: 'Satisfy', cursive;">
-            <span style="color: #ff9933;">Frame</span>
-            <span style="color: #fff">Art</span>
-            <span style="color: #33cc33">India</span>
-          </h1>
-          <p class="intro-subtitle"  style="font-family: 'Satisfy', cursive;"><span class="text-slider-items">Book Your Dates...</span><strong class="text-slider"></strong></p>
+          <!--<h1 class="intro-title mb-4" style="font-family: 'Satisfy', cursive;">
+        </h1>-->
+          <h1 style="color: #fff; text-transform: uppercase; font-family: 'Courgette', cursive;">Prasad &amp; Pooja</h1>
+          <h4 style="color: #fff; font-size: 15px;">We Are Getting Married</h4>
+          <div class="count">
+            <div class="countd">
+              <span id="days">00</span>
+              days
+            </div>
+            <div class="countd">
+              <span id="hours">00</span>
+              hours
+            </div>
+            <div class="countd">
+              <span id="minutes">00</span>
+              minutes
+            </div>
+            <div class="countd">
+              <span id="seconds">00</span>
+              seconds
+            </div>
+          </div>
+          <!--<p class="intro-subtitle"  style="font-family: 'Satisfy', cursive;"><span class="text-slider-items">Book Your Dates...</span><strong class="text-slider"></strong></p>-->
         </div>
       </div>
     </div>
@@ -791,12 +817,38 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <!--<script src="js/simplyCountdown.js"></script>
+  <script src="js/jquery.countTo.js"></script>-->
   <!-- Contact Form JavaScript File -->
   <script src="{% static 'contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="css/dark-mode-switch.min.js"></script>
+
+  <script type="text/javascript">
+
+    var count = new Date("jan 30, 2020 10:40:10").getTime();
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var d = count - now;
+
+
+      var days =  Math.floor(d/(1000*60*60*24));
+      var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+      var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+      var seconds = Math.floor((d%(1000*60))/1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (d <= 0) {
+        clearInterval(x);
+      }
+    }, 1000);
+  </script>
 
 </body>
 </html>
