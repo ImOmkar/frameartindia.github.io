@@ -1,846 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>The Frame Art India</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameArtIndia</title>
 
-  <meta property="og:title" content="The Frame Art India Production House"/>
-	<meta property="og:image" content="img/Logo.png"/>
-	<meta property="og:url" content="https://theframeartindia.com"/>
-	<meta property="og:site_name" content="The Frame Art India"/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="The Frame Art India" />
-	<meta name="twitter:image" content="img/Logo.png" />
-	<meta name="twitter:url" content="https://theframeartindia.com" />
-	<meta name="twitter:card" content="img/Logo.png" />
+    <meta property="og:title" content="The Frame Art India Production House"/>
+    <meta property="og:image" content="img/Logo.png"/>
+    <meta property="og:url" content="https://theframeartindia.com"/>
+    <meta property="og:site_name" content="The Frame Art India"/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="The Frame Art India" />
+    <meta name="twitter:image" content="img/Logo.png" />
+    <meta name="twitter:url" content="https://theframeartindia.com" />
+    <meta name="twitter:card" content="img/Logo.png" />
 
   <!-- Favicons -->
   <link href="img/icon1.png" rel="icon">
   <link href="img/icon1.png" rel="apple-touch-icon">
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/77d2147018.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-  <!--dark mode css file-->
-  <link rel="stylesheet" href="css/dark-mode.css">
-
+    <style>
+      *{
+        font-family: 'Quicksand', sans-serif;
+        scroll-behavior: smooth;
+      }
+      header{
+        background:url('https://res.cloudinary.com/dwltrduan/image/upload/v1575307299/up2_pobvoj.jpg');
+      }
+      hr.exp{
+      border: 5px solid lightcoral;
+      border-radius: 50px;
+      width: 60px;
+      margin: auto;
+      }
+      hr.gall{
+      border: 5px solid lightcoral;
+      border-radius: 50px;
+      width: 60px;
+      margin: auto;
+      }
+      hr.testi{
+      border: 5px solid lightcoral;
+      border-radius: 50px;
+      width: 60px;
+      margin: auto;
+      }
+      hr.find{
+      border: 5px solid lightcoral;
+      border-radius: 50px;
+      width: 60px;
+      margin: auto;
+      }
+      hr.message{
+      border: 5px solid lightcoral;
+      border-radius: 50px;
+      width: 60px;
+      }
+    </style>
 </head>
+<body>
 
-<body id="page-top">
-
-  <!--/ Nav Star /-->
-  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top">T F A I</a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#clients">Our clients</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contact</a>
-          </li>
-        </ul>
+<!--navbar start-->
+<header class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+    <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 bg-transparent">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">T F A I</a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row y">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#home">Home</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-white md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#work">Portfolio</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contact">Contact</a>   
+        </nav>
       </div>
     </div>
-  </nav>
-  <!--/ Nav End /-->
+</header>
+<!--navbar end-->
 
-  <!--<header id="home">
-  <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="video/intro.mp4" type="video/mp4">
-  </video>-->
-  <!--<div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="w-100 text-white">
-        <h1 class="display-3">Video Header</h1>
-        <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+
+<!--Introduction start-->
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dwltrduan/image/upload/v1596562481/undraw_camera_mg5h_torjtu.svg">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+      <h1 class="title-font sm:text text-3xl font-medium text-gray-900">We're the team,
+        <h3 class="text-4xl text-red-600 mx-auto">Frame Art India</h3>
+      </h1>
+      <p class="mb-8 leading-relaxed">We have worked as a team for last 3 years. Over this time we have travelled to some amazing and beautiful locations from places just around the corner to the other side of the states, to photograph people and document special moments in their lives.</p>
+      <p class="mb-8 leading-relaxed">We absolutely love doing what we do and certainly can’t imagine ever doing anything other than photography.</p>
+      <p class="mb-8 sm:text-xl leading-relaxed">we hope this is reflected in what you see throughout our website.</p>
+      <div class="flex justify-center">
+        <a href="https://www.facebook.com/TheFrameArtindia" class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mr-1"><i class="fa fa-facebook"></i></a>
+        <a href="http://instagram.com/the.frame.art_india" class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mr-1"> <i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCM9UZzJOCExc4Rw225YE8gg" class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mr-1"> <i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Introduction end-->
+
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+
+
+<!--Services start-->
+<section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap w-full">
+      <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="text-red-600">S</span>ervices
+            </h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-base">Specialist in need!</p>
+          </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+            <i class="fa fa-camera"></i>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Pre-Wedding</h2>
+            <p class="leading-relaxed">"Once in a while, Right in the middle of an ordinary life, Love gives us a fairy tale."</p>
+          </div>
+        </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+            <i class="fa fa-heart fa-lg"></i>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Wedding</h2>
+            <p class="leading-relaxed">"Wedding photography is so challenging and complex. Nothing is the same ever."</p>
+          </div>
+        </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+            <i class="fa fa-camera fa-lg"></i>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Cinematography</h2>
+            <p class="leading-relaxed">"Cinematography is infinite in its possibilities... much more so than music." </p>
+          </div>
+        </div>
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+            <i class="fa fa-cut fa-lg"></i>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Videography & Processing</h2>
+            <p class="leading-relaxed">"Lets take you into deeper experience, make a moment lasting"</p>
+          </div>
+        </div>
+
+        <div class="flex relative pb-12">
+          <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+            <i class="fa fa-star fa-lg"></i>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Events</h2>
+            <p class="leading-relaxed">“What you need, is an Event, to remember for a lifetime and we will help you to achieve that.”</p>
+          </div>
+        </div>
+
+        <div class="flex relative">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+            <i class="fa fa-briefcase fa-lg"></i>
+          </div>
+          <div class="flex-grow pl-4">
+            <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Commercial</h2>
+            <p class="leading-relaxed">"A Good photographer and their photographs can give boost to your business"</p>
+          </div>
+        </div>
+
+      </div>
+      <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="https://res.cloudinary.com/dwltrduan/image/upload/v1596624072/undraw_services_5tv9_lspdhr.svg" alt="step">
+    </div>
+  </div>
+</section>
+<!--Services end-->
+
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+
+<!--Experience start-->
+<section>
+  <!--<div class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative" style="background-image: url('https://res.cloudinary.com/dwltrduan/image/upload/v1596631053/imageonline-co-darkenimage_1_e06qhq.jpg')">-->
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font">Till this date</h1>
+          <hr class="exp">
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We have,</p>
+        </div>
+        <div class="flex flex-wrap mt-4 -m-4 text-center">
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 bg-white shadow-lg border-gray-200 px-4 py-6 rounded-lg">
+              <div class="flex-shrink-0 w-20 h-20 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <i class="fa fa-check-circle fa-2x"></i>
+              </div>
+              <h2 class="title-font font-medium text-3xl text-gray-900">200</h2>
+              <p class="leading-relaxed">Works completed</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 bg-white shadow-lg border-gray-200 px-4 py-6 rounded-lg">
+              <div class="flex-shrink-0 w-20 h-20 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <i class="fa fa-calendar fa-2x"></i>
+              </div>
+              <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+              <p class="leading-relaxed">Years of experience</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 bg-white shadow-lg border-gray-200 px-4 py-6 rounded-lg">
+              <div class="flex-shrink-0 w-20 h-20 rounded-full py-5 bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <i class="fa fa-users fa-2x"></i>
+              </div>
+              <h2 class="title-font font-medium text-3xl text-gray-900">150</h2>
+              <p class="leading-relaxed">Total clients</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 bg-white shadow-lg border-gray-200 px-4 py-6 rounded-lg">
+              <div class="flex-shrink-0 w-20 h-20 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                <i class="fa fa-grav fa-2x"></i>
+              </div>
+              <h2 class="title-font font-medium text-3xl text-gray-900">10</h2>
+              <p class="leading-relaxed">Squad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--</div>-->
+</section>
+<!--Experience end-->
+
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+
+<!--Gallery start-->
+<section id="work" class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div x-data="{}" class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Our<span class="text-red-600"> Work</span></h1>
+        <hr class="gall">
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are few of our former clients.</p>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">-->
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">-->
+        </div>
+      </div>
+
+
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">-->
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">-->
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">
+          </a>
+          <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">-->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--Gallery end-->
+
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+
+
+<!--Testimonial start-->
+<section>
+  <div class="flex flex-col text-center w-full mb-20">
+    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"><span class="text-orange-600">T</span>estimonial</h1>
+    <hr class="testi">
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This is what Our Customers Are Saying!</p>
+  </div>
+
+  <div class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+    
+    <div class="relative w-full py-2 md:py-24 bg-orange-300 md:w-1/2 flex flex-col item-center justify-center">
+      
+      <div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
+      
+      <div class="relative md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
+        <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596643356/undraw_feedback_h2ft_rwxpai.svg" alt="feedback">
+      </div>
+
+      <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
+        <button 
+          class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
+          x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
+          &#8592;
+        </button><button 
+          class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-indigo-500 font-bold w-12 h-10"
+          x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
+          &#8594;
+          </button>
+      </div>
+    </div>
+
+    <div class="bg-gray-100 md:w-1/2">
+      <div class="flex flex-col h-full relative">
+
+        <div class="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24"><path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/></svg>
+        </div>
+         
+        <div class="h-full relative z-10">
+          <div x-show.immediate="testimonialActive === 1">
+            <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 1">
+              Deepak and his team was very coordinating.. Giving all the best shots they can give..team was very supportive and polite.. Also got photos of engagement soon..best people with reasonable charges..also want to appoint them for
+              marriage.
+            </p>
+          </div>
+          
+          <div x-show.immediate="testimonialActive === 2">
+            <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 2">
+              Pictures last a lifetime and they were able to capture every moment, every detail, big and small of our special day. Made it a dreamlike as they say. I highly recommend their services for any special occasion.
+            </p>
+          </div>
+          
+          <div x-show.immediate="testimonialActive === 3"> 
+            <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 3">
+              Amazing work by the team Deepak and Vrushali. Very proffesional foks.. Deepak has tremendous understanding of clicking picture where in Vrushali is just fabulous with art work and album designing together has a team they are just
+              great..now they are official and family photographer permenantly.
+            </p>
+          </div>
+
+          <!--<div x-show.immediate="testimonialActive === 4"> 
+            <p class="text-gray-600 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 3">
+              The Frame Art India Production House, Loved all our photos!! thank you ! they turned out more beautiful than i imagined , made me feel so happy to make the decision to capture our precious day All the traditional and candid pics
+              are mind blowing and overwhelming 😘😘😘😘😘 and about Videography you guys are rocking once again thank you team regards Kavita Panchal
+            </p>
+          </div>-->
+        </div>
+
+        <div class="flex my-4 justify-center items-center">
+          <button 
+            @click.prevent="testimonialActive = 1" 
+            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
+            :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 1 }"	
+          >PP</button>
+          <button 
+            @click.prevent="testimonialActive = 2" 
+            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
+            :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 2 }"	
+          >VS</button>
+          <button 
+            @click.prevent="testimonialActive = 3" 
+            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+            :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 3 }"
+          >DS</button>
+          <!--<button 
+            @click.prevent="testimonialActive = 4" 
+            class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+            :class="{'h-12 w-12 opacity-25 bg-indigo-300 text-gray-600': testimonialActive != 4, 'h-16 w-16 opacity-100 bg-indigo-600 text-white': testimonialActive == 4 }"
+          >KP</button>-->
+        </div>
+         
+        <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
+          <div class="text-center" x-show="testimonialActive == 1">
+            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Pranali Panchal</h2>
+            <small class="text-gray-500 text-xs md:text-sm truncate">ShadiSaga</small>
+          </div>
+
+          <div class="text-center" x-show="testimonialActive == 2">
+            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Vijay Sawant</h2>
+            <small class="text-gray-500 text-xs md:text-sm truncate">ShadiSaga</small>
+          </div>
+
+          <div class="text-center" x-show="testimonialActive == 3">
+            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Darshana Sawant</h2>
+            <small class="text-gray-500 text-xs md:text-sm truncate">ShadiSaga</small>
+          </div>
+          
+          <!--<div class="text-center" x-show="testimonialActive == 4">
+            <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Kavi panchal-padlekar</h2>
+            <small class="text-gray-500 text-xs md:text-sm truncate">ShadiSaga</small>
+          </div>-->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Testimonial end-->
+
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+
+<!--Location & Contact-->
+<div class="flex flex-col text-center w-full mb-20">
+  <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"><span class="text-orange-600">Find</span> Us.</h1>
+  <hr class="find">
+  <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Get in touch quickly!</p>
+</div>
+<section id="contact" class="text-gray-700 body-font relative">
+  <div class="absolute inset-0 bg-gray-300">
+    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=theframeartindia&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+  </div>
+  <div class="container px-5 py-24 mx-auto flex">
+    <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Message Us</h2>
+      <hr class="message">
+      <p class="leading-relaxed mb-5 text-gray-600">Your booking is few clicks away from us.</p>
+      <form id="tfai-form" action="https://formspree.io/xpzybnld" method="POST" class="rounded mb-4">
+        <div class="mb-4">
+          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" id="fullname" type="text" placeholder="Full name" required>
+        </div>
+        <div class="mb-4">
+          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" id="email" type="email" placeholder="email address" required>
+        </div>
+        <div class="mb-4">
+          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" id="number" type="number" placeholder="contact number" required>
+        </div>
+        <div class="mb-4">
+          <textarea class="bg-white rounded border border-gray-400 w-full focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none" id="message" placeholder="Message" required></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0" type="submit">
+            <i class="fa fa-envelope"></i> Send
+          </button>
+        </div>
+        <p class="text-orage-600" id="my-form-status"></p>
+      </form>
+      <!--<p class="text-xs text-gray-500 mt-3"></p>-->
+    </div>
+  </div>
+</section>
+<!--Location & Contact end-->
+
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+
+<!--footer start-->
+
+<footer class="text-gray-700 body-font">
+  <!--<div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+        <div class="flex xl:flex-no-wrap md:flex-no-wrap lg:flex-wrap flex-wrap justify-center md:justify-start">
+          <input class="w-40 sm:w-auto bg-gray-100 rounded xl:mr-4 lg:mr-0 sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base py-2 px-4" placeholder="Placeholder" type="text">
+          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
+        </div>
+        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
+          <br class="lg:block hidden">waistcoat green juice
+        </p>
       </div>
     </div>
   </div>-->
-<!--</header>-->
-
-  <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image">
-    <!--<div class="overlay-itro"></div>-->
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="intro-title mb-4" style="font-family: 'Satisfy', cursive;">
-        </h1>
-          <!--<h1 style="color: #fff; text-transform: uppercase; font-family: 'Courgette', cursive; font-size: 35px;">Udharv &amp; Yadniki</h1>
-          <h4 style="color: #fff; font-size: 15px;">We Are Getting Married</h4>
-          <div class="count">
-            <div class="countd">
-              <span id="days">00</span>
-              days
-            </div>
-            <div class="countd">
-              <span id="hours">00</span>
-              hours
-            </div>
-            <div class="countd">
-              <span id="minutes">00</span>
-              minutes
-            </div>
-            <div class="countd">
-              <span id="seconds">00</span>
-              seconds
-            </div>
-          </div>-->
-          <!--<p class="intro-subtitle"  style="font-family: 'Satisfy', cursive;"><span class="text-slider-items">Congratulations...</span><strong class="text-slider"></strong></p>-->
-        </div>
-      </div>
+  <div class="bg-gray-200">
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596699738/logo_2_dufnfg.png" class="w-13 h-8" alt="">
+        <span class="ml-3 text-xl">T F A I</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2020 findomkar —
+        <a href="https://twitter.com/OmParab5" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@OmParab5</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500" href="https://www.facebook.com/TheFrameArtindia">
+          <i class="fa fa-facebook "></i>
+        </a>
+        <a class="ml-3 text-gray-500" href="http://instagram.com/the.frame.art_india">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.youtube.com/channel/UCM9UZzJOCExc4Rw225YE8gg">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </span>
     </div>
   </div>
-  <!--/ Intro Skew End /-->
-  <!--dark mode switch-->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="theme-switch-wrapper mt-5">
-          <label class="theme-switch" for="darkSwitch">
-            <input type="checkbox" data-toggle="toggle" id="darkSwitch">
-            <div class="slider round"></div>
-          </label>
-          <em>Night mode!</em>
+</footer>
+
+<!--footer end-->
+
+
+<!--image modal-->
+<div x-data="{ imgModal : false, imgModalSrc : '', imgModalDesc : '' }">
+  <template @img-modal.window="imgModal = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;" x-if="imgModal">
+    <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" x-on:click.away="imgModalSrc = ''" class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+      <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+        <div class="z-50">
+          <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
+            <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div class="p-2">
+          <img :alt="imgModalSrc" class="object-contain h-1/2-screen" :src="imgModalSrc">
+          <p x-text="imgModalDesc" class="text-center text-orange-300">The Frame Art India</p>
         </div>
       </div>
     </div>
-  </div>
-  <!--dark mode switch end-->
-
-  <!--about section start-->
-  <section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="about-img">
-                      <img src="img/Logo.png" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                    <hr>
-                  </div>
-
-                </div><br><br><br><br>
-                <div class="skill-mf">
-                  <p class="title-s">Skill</p>
-                  <span>Photography</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>Videography</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>Cinematography</span> <span class="pull-right">60%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <span>Editing</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me pt-4 pt-md-0">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      About us
-                    </h5>
-                  </div>
-                  <p class="lead">
-                    HI THERE...
-                  </p>
-                  <p class="lead">
-                    We are the team "Frame Art India"
-                  </p>
-                  <p class="lead">
-                    We have worked as a team for last 3 years. Over this time we have travelled to some amazing and beautiful locations from
-                    places just around the corner to the other side of the states, to photograph people and document special moments in their lives.
-                  </p>
-                  <p class="lead">
-                    We absolutely love doing what we do and certainly can’t imagine ever doing anything other than photography,
-                    we hope this is reflected in what you see throughout our website.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--about section end-->
-
-  <!--/ Section Services Start /-->
-  <section id="service" class="services-mf route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Services
-            </h3>
-            <p class="subtitle-a">
-              Specialist in need!
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Pre-Wedding</h2>
-              <p class="s-description text-center">
-                "Once in a while, Right in the middle of an ordinary life, Love gives us a fairy tale."
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-heart"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Wedding</h2>
-              <p class="s-description text-center">
-                "Wedding photography is so challenging and complex. Nothing is the same ever."
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-camera"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Cinematography</h2>
-              <p class="s-description text-center">
-                "Cinematography is infinite in its possibilities... much more so than music."
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-scissors"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Videography & Processing</h2>
-              <p class="s-description text-center">
-                "Lets take you into deeper experience, make a moment lasting"
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-star"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Events</h2>
-              <p class="s-description text-center">
-                “What you need, is an Event, to remember for a lifetime and we will
-                help you to achieve that.”
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-briefcase"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">Commercial</h2>
-              <p class="s-description text-center">
-                "A Good photographer and their photographs can give boost to your business"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Services End /-->
-
-  <!--/ Section experience start /-->
-  <section id="experience" class="experinece-mf route">
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(https://res.cloudinary.com/dwltrduan/image/upload/v1575304752/thrt_rpnhac.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">200</p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">3</p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ios-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">150</p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-              </div>
-              <div class="counter-num">
-                <p class="counter">10</p>
-                <span class="counter-text">SQUAD</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section experience start /-->
-
-  <!--/ Section work Start /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              OUR WORK
-            </h3>
-            <p class="subtitle-a">
-              Here are few of our former clients.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304748/sixth_kbjlq1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304748/sixth_kbjlq1.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1580139220/0025_ubshkx.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139220/0025_ubshkx.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304747/eight_xc7n84.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304747/eight_xc7n84.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304743/fifth_hvtlza.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304743/fifth_hvtlza.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304739/seven_ex2aga.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304739/seven_ex2aga.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304747/ten_vfgn07.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304747/ten_vfgn07.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304743/eleven_dusqai.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304743/eleven_dusqai.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304752/thrt_rpnhac.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304752/thrt_rpnhac.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1579855694/030_kn5vyi.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1579855694/030_kn5vyi.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1575307299/up2_pobvoj.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1575307299/up2_pobvoj.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="https://res.cloudinary.com/dwltrduan/image/upload/v1580837217/bgweb_1_bxilj1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="https://res.cloudinary.com/dwltrduan/image/upload/v1580837217/bgweb_1_bxilj1.jpg" alt="" class="img-fluid"
-                style="border-radius: 50px 50px 30px 20px;"
-                >
-              </div>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      <a href="video_gallery.html"><button type="button" class="btn btn-outline-info btn-lg btn-block">Videos</button></a>
-    </div>
-  </section><br>
-  <!--/ Section work End /-->
-
-  <!--/ Section Testimonials Start /-->
-  <section id="clients" class="clients-mf route">
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(https://res.cloudinary.com/dwltrduan/image/upload/v1575307299/up2_pobvoj.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="testimonial-mf" class="owl-carousel owl-theme">
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img src="img/shaadisaga.png" alt="" class="rounded-circle b-shadow-a">
-                  <span class="author">Pranali Panchal</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    Amazing work by the team Deepak and Vrushali. Very proffesional foks.. Deepak has tremendous understanding of clicking picture where in Vrushali is just fabulous with art work and album designing together has a team they are just
-                    great..now they are official and family photographer permenantly.
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img src="img/shaadisaga.png" alt="" class="rounded-circle b-shadow-a">
-                  <span class="author">Vijay Sawant</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    Pictures last a lifetime and they were able to capture every moment, every detail, big and small of our special day. Made it a dreamlike as they say. I highly recommend their services for any special occasion.
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img src="img/shaadisaga.png" alt="" class="rounded-circle b-shadow-a">
-                  <span class="author">Darshana Sawant</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    Deepak and his team was very coordinating.. Giving all the best shots they can give..team was very supportive and polite.. Also got photos of engagement soon..best people with reasonable charges..also want to appoint them for
-                    marriage
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-
-              <div class="testimonial-box">
-                <div class="author-test">
-                  <img src="img/shaadisaga.png" alt="" class="rounded-circle b-shadow-a">
-                  <span class="author">Kavi Panchal-Padlekar</span>
-                </div>
-                <div class="content-test">
-                  <p class="description lead">
-                    The Frame Art India Production House, Loved all our photos!! thank you ! they turned out more beautiful than i imagined , made me feel so happy to make the decision to capture our precious day All the traditional and candid pics
-                    are mind blowing and overwhelming 😘😘😘😘😘 and about Videography you guys are rocking once again thank you team regards Kavita Panchal
-                  </p>
-                  <span class="comit"><i class="fa fa-quote-right"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ Section Testimonials end /-->
-
-  <!--/ Section google map Start /-->
-  <section class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Get Direction
-            </h3>
-            <p class="subtitle-a">
-              Click on view larger map.
-            </p>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="google-maps" style="position: relative; padding-bottom: 60%; height: 0; overflow: hidden;">
-        <div class="mapouter">
-          <div class="gmap_canvas"><iframe width="1080" height="606" id="gmap_canvas"
-              src="https://maps.google.com/maps?q=6B%2F101%20new%20mhada%20police%20colony%20Mahakali%20Caves%20Road%20andheri%20east%20mumbai%20400060%2C%20Andheri%20east%2C%20Mumbai%2C%20Maharashtra%20400060&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
-          <style>
-            .mapouter {
-              position: relative;
-              text-align: right;
-              height: 606px;
-              width: 1080px;
-            }
-
-            .gmap_canvas {
-              overflow: hidden;
-              background: none !important;
-              height: 606px;
-              width: 1080px;
-            }
-          </style>
-        </div>
-      </div>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-91db93b1-ce84-48d7-b40f-aea8e325f9de"></div>
-    </div>
-  </section>
-  <!--/ Section google map End /-->
+  </template>
+</div>
+<!--image modal end-->
 
 
-  <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(https://res.cloudinary.com/dwltrduan/image/upload/v1565776278/6_q3bgpp.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="contact-mf">
-            <div id="contact" class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="title-box-2">
-                    <h5 class="title-left">
-                      Send Message Us
-                    </h5>
-                  </div>
-                  <div>
-                    <form action="https://formspree.io/deepakparab2424@gmail.com" method="POST" role="form">
-                      <div id="sendmessage">Your message has been sent. Thank you!</div>
-                      <div id="errormessage"></div>
-                      <div class="row">
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required />
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                          <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
-                            <div class="validation"></div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="title-box-2 pt-4 pt-md-0">
-                    <h5 class="title-left">
-                      Get in Touch
-                    </h5>
-                  </div>
-                  <div class="more-info">
-                    <p class="lead">
-                      Find the below address of our workstation! <br>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
 
-                      Go through our social media handles to see our recent work!<br>
-                    </p>
-                    <ul class="list-ico">
-                      <li><span class="ion-ios-location"></span> Mhada Colony, Andheri(E) 400093</li>
-                      <li><span class="ion-ios-telephone"></span> (+91) 8369175968</li>
-                      <li><span class="ion-email"></span>deepakparab2424@gmail.com</li>
-                    </ul>
-                  </div>
-                  <div class="socials">
-                    <ul>
-                      <!--<li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>-->
-                      <li><a href="https://instagram.com/deepakparab24"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
-                      <!--<li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>-->
-                      <li><a href="https://www.youtube.com/channel/UCM9UZzJOCExc4Rw225YE8gg?view_as=subscriber"><span class="ico-circle"><i class="ion-social-youtube"></i></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="copyright-box">
-              <p class="copyright">&copy; Copyright <strong>Frame Art India</strong>. All Rights Reserved</p>
-              <div class="credits">
-                Designed by <a href="https://bit.ly/2Y5aphp">findOmkar</a>
-                <!-- hitwebcounter Code START-->
-                <!--<a href="https://www.hitwebcounter.com" target="_blank">
-                <img src="https://hitwebcounter.com/counter/counter.php?page=7177643&style=0008&nbdigits=5&type=page&initCount=0" title="Visits Count" Alt="analytics counter"   border="0" >-->
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
-  <!--/ Section Contact-footer End /-->
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("tfai-form");
+    var button = document.getElementById("tfai-form-button");
+    var status = document.getElementById("tfai-form-status");
 
-  <!--/ Section floating button start /-->
-  <div class="sticky-container">
-    <ul class="sticky">
-      <li>
-        <img src="img/facebook-circle.png" width="32" height="32">
-        <p><a href="https://www.facebook.com/pg/TheFrameArtindia/" target="_blank">Like Us on<br>Facebook</a></p>
-      </li>
-      <li>
-        <img src="img/twitter-circle.png" width="32" height="32">
-        <p><a href="#" target="_blank">Follow Us on<br>Twitter</a></p>
-      </li>
-      <li>
-        <img src="img/social-instagram-new-circle.png" width="32" height="32">
-        <p><a href="https://instagram.com/deepakparab24" target="_blank">Follow Us on<br>Instagram</a></p>
-      </li>
-      <li>
-        <img src="img/youtube-circle.png" width="32" height="32">
-        <p><a href="https://www.youtube.com/channel/UCM9UZzJOCExc4Rw225YE8gg?view_as=subscriber" target="_blank">Subscribe on<br>YouYube</a></p>
-      </li>
-    </ul>
-  </div>
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      button.style = "display: none ";
+      status.innerHTML = "Yo!! Thanks! 🥰";
+    }
 
-  <!-- Floating Social Media bar Ends -->
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+    }
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
+    // handle the form submission event
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
-  <!--<script src="js/simplyCountdown.js"></script>
-  <script src="js/jquery.countTo.js"></script>-->
-  <!-- Contact Form JavaScript File -->
-  <script src="{% static 'contactform/contactform.js"></script>
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
 
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-  <script src="css/dark-mode-switch.min.js"></script>
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }
+</script>
 
+<script>
+  var offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
+  offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+  scrollDuration = 700;
+</script>
+    
 </body>
 </html>
