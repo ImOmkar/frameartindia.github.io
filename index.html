@@ -496,8 +496,7 @@
       <hr class="message">
       <p class="leading-relaxed mb-5 text-gray-600">Your booking is few clicks away from us.</p>
 
-      <div class="bg-red-100 border border-green-400 text-green-700 px-4 py-3 rounded-full relative" role="alert">
-        <strong id="tfai-form-status" class="font-bold"></strong>
+      <div id="tfai-form-status" class="bg-red-100 border border-green-400 text-green-700 px-4 py-3 rounded-full relative" role="alert">
       </div>
 
       <form id="tfai-form" action="https://formspree.io/xpzybnld" method="POST" class="rounded mb-4">
@@ -659,6 +658,7 @@
     function success() {
       form.reset();
       button.style = "display: outline-none ";
+      status.style = 
       status.innerHTML = "Superb 🔥, We've received your mail. we'll get back to you shortly! 🥰";
     }
 
