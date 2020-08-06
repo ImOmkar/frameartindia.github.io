@@ -509,13 +509,12 @@
           <textarea class="bg-white rounded border border-gray-400 w-full focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none" name="message" id="message" placeholder="Message" required></textarea>
         </div>
         <div class="flex items-center justify-between">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0" type="submit">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0" id="tfai-form-button" type="submit">
             <i class="fa fa-envelope"></i> Send
           </button>
         </div>
-        <p class="text-yellow" id="tfai-form-status"></p>
       </form>
-      <!--<p class="text-xs text-gray-500 mt-3"></p>-->
+      <p id="tfai-form-status"></p>
     </div>
   </div>
 </section>
