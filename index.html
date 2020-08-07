@@ -22,6 +22,9 @@
     <script src="https://use.fontawesome.com/77d2147018.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
     <style>
@@ -30,7 +33,7 @@
         scroll-behavior: smooth;
       }
       header{
-        background:url('https://res.cloudinary.com/dwltrduan/image/upload/v1575307299/up2_pobvoj.jpg');
+        background:url('https://res.cloudinary.com/the-frame-art-india/image/upload/v1596821580/088_hgw4hd.jpg');
       }
       hr.exp{
       border: 5px solid lightcoral;
@@ -80,7 +83,7 @@
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row y">
           <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#home">Home</a>
-          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-white md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#work">Gallery</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-white md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#work">Portfolio</a>
           <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contact">Contact</a>   
         </nav>
       </div>
@@ -91,7 +94,7 @@
 
 <!--Introduction start-->
 <section class="text-gray-700 body-font">
-  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+  <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <img class="object-cover object-center rounded" alt="hero" src="https://res.cloudinary.com/dwltrduan/image/upload/v1596562481/undraw_camera_mg5h_torjtu.svg">
     </div>
@@ -99,9 +102,9 @@
       <h1 class="title-font sm:text text-3xl font-medium text-gray-900">We're the team,
         <h3 class="text-4xl text-red-600 mx-auto">Frame Art India</h3>
       </h1>
-      <p class="mb-8 leading-relaxed">We have worked as a team for last 3 years. Over this time we have travelled to some amazing and beautiful locations from places just around the corner to the other side of the states, to photograph people and document special moments in their lives.</p>
-      <p class="mb-8 leading-relaxed">We absolutely love doing what we do and certainly can’t imagine ever doing anything other than photography.</p>
-      <p class="mb-8 sm:text-xl leading-relaxed">we hope this is reflected in what you see throughout our website.</p>
+      <p class="mb-6 leading-relaxed">We have worked as a team for last 3 years. Over this time we have travelled to some amazing and beautiful locations from places just around the corner to the other side of the states, to photograph people and document special moments in their lives.</p>
+      <p class="mb-6 leading-relaxed">We absolutely love doing what we do and certainly can’t imagine ever doing anything other than photography.</p>
+      <p class="mb-6 sm:text-xl leading-relaxed">We hope this is reflected in what you see throughout our website.</p>
       <div class="flex justify-center">
         <a href="https://www.facebook.com/TheFrameArtindia" class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mr-1"><i class="fa fa-facebook"></i></a>
         <a href="http://instagram.com/the.frame.art_india" class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline mr-1"> <i class="fa fa-instagram"></i></a>
@@ -112,16 +115,16 @@
 </section>
 <!--Introduction end-->
 
-<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto -m-4 -mt-6" alt="">
 
 
 <!--Services start-->
 <section class="text-gray-700 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+  <div class="container px-5 py-10 mx-auto flex flex-wrap">
     <div class="flex flex-wrap w-full">
-      <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"><span class="text-red-600">S</span>ervices
+      <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-2">
+          <div class="flex flex-wrap w-full mb-10 flex-col items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl font-medium text-gray-900"><span class="text-red-600">S</span>ervices
             </h1>
             <p class="lg:w-1/2 w-full leading-relaxed text-base">Specialist in need!</p>
           </div>
@@ -204,13 +207,13 @@
 </section>
 <!--Services end-->
 
-<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mt-4 -mb-8" alt="">
 
 <!--Experience start-->
 <section>
   <!--<div class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative" style="background-image: url('https://res.cloudinary.com/dwltrduan/image/upload/v1596631053/imageonline-co-darkenimage_1_e06qhq.jpg')">-->
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
+      <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-col text-center w-full mb-10">
           <h1 class="sm:text-3xl text-2xl font-medium title-font">Till this date</h1>
           <hr class="exp">
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We have,</p>
@@ -258,53 +261,55 @@
 </section>
 <!--Experience end-->
 
-<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 -m-2 -mt-10 mx-auto" alt="">
 
 <!--Gallery start-->
+
 <section id="work" class="text-gray-700 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+  <div class="container lg:p-20 px-5 py-5 mx-auto flex flex-wrap">
     <div x-data="{}" class="flex flex-wrap md:-m-2 -m-1">
-      <div class="flex flex-col text-center w-full mb-20">
+      <div class="flex flex-col text-center w-full mb-10">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Our<span class="text-red-600"> Work</span></h1>
         <hr class="gall">
         <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here are few of our former clients.</p>
       </div>
       <div class="flex flex-wrap w-1/2">
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818134/000014_vrbjhn.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818134/000014_vrbjhn.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-full">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818131/009_h4egq1.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818131/009_h4egq1.jpg">
           </a>
           <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">-->
         </div>
       </div>
+      
       <div class="flex flex-wrap w-1/2">
         <div class="md:p-2 p-1 w-full">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818134/014_n0j6vj.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818134/014_n0j6vj.jpg">
           </a>
           <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818126/IMG_8768_y2k3ca.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818126/IMG_8768_y2k3ca.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">-->
         </div>
@@ -319,50 +324,64 @@
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818068/FAI_2516_ti834z.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818068/FAI_2516_ti834z.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1580139539/0023_1_jpapbr.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-full">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818129/01_sowxoj.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818129/01_sowxoj.jpg">
           </a>
           <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304736/frty_okyneo.jpg">-->
         </div>
       </div>
+      
       <div class="flex flex-wrap w-1/2">
         <div class="md:p-2 p-1 w-full">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596820364/IMG_9102_gbzxfj.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full h-full object-cover object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596820364/IMG_9102_gbzxfj.jpg">
           </a>
           <!--<img alt="gallery" class="w-full h-full object-cover object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818136/DSC_0614_nvhodq.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818136/DSC_0614_nvhodq.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565796491/3_sbj3bt.jpg">-->
         </div>
         <div class="md:p-2 p-1 w-1/2">
-          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
-            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">
+          <a @click="$dispatch('img-modal', {  imgModalSrc: 'https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818124/IMG_3845_idnews.jpg', imgModalDesc: 'The Frame Art India' })" class="cursor-pointer">
+            <img alt="Placeholder" class="w-full object-cover h-full object-center block transform transition-all duration-300 scale-100 hover:scale-95 rounded-lg" src="https://res.cloudinary.com/the-frame-art-india/image/upload/v1596818124/IMG_3845_idnews.jpg">
           </a>
           <!--<img alt="gallery" class="w-full object-cover h-full object-center block" src="https://res.cloudinary.com/dwltrduan/image/upload/v1565776303/2_bobqes.jpg">-->
         </div>
+      </div>   
+    </div>
+    <div class="glide mt-4 w-full">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide h-20"><img class="rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304733/twl_ayjx0a.jpg" alt=""></li>
+          <li class="glide__slide"><img class="rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304745/nine_r8fmd5.jpg" alt=""></li>
+          <li class="glide__slide"><img class="rounded-lg" src="https://res.cloudinary.com/dwltrduan/image/upload/v1575304747/eight_xc7n84.jpg" alt=""></li>
+        </ul>
       </div>
-
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+      </div>
     </div>
   </div>
 </section>
-<!--Gallery end-->
+  
 
-<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mt-2 -m-8 mb-4" alt="">
 
 
 <!--Testimonial start-->
 <section>
-  <div class="flex flex-col text-center w-full mb-20">
+  <div class="flex flex-col text-center w-full mb-10">
     <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"><span class="text-orange-600">T</span>estimonial</h1>
     <hr class="testi">
     <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This is what Our Customers Are Saying!</p>
@@ -478,10 +497,10 @@
 </section>
 <!--Testimonial end-->
 
-<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto mb--5" alt="">
+<img src="https://res.cloudinary.com/dwltrduan/image/upload/v1596705310/Pngtree_star_horizontal_line_decoration_elements_5054148_iaiyti.png" class="h-20 mx-auto -m-4 mb-2" alt="">
 
 <!--Location & Contact-->
-<div class="flex flex-col text-center w-full mb-20">
+<div class="flex flex-col text-center w-full mb-10">
   <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900"><span class="text-orange-600">Find</span> Us.</h1>
   <hr class="find">
   <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Get in touch quickly!</p>
@@ -495,29 +514,27 @@
       <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Message Us</h2>
       <hr class="message">
       <p class="leading-relaxed mb-5 text-gray-600">Your booking is few clicks away from us.</p>
-
-      <h1 id="tfai-form-status" class="text-green-600 text-center mb-3" role="alert">
-      </h1>
-
       <form id="tfai-form" action="https://formspree.io/xpzybnld" method="POST" class="rounded mb-4">
         <div class="mb-4">
-          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" name="fullname" id="fullname" type="text" placeholder="Full name" required>
+          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" id="fullname" type="text" placeholder="Full name" required>
         </div>
         <div class="mb-4">
-          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" name="email" id="email" type="email" placeholder="email address" required>
+          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" id="email" type="email" placeholder="email address" required>
         </div>
         <div class="mb-4">
-          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" name="number" id="number" type="number" placeholder="contact number" required>
+          <input class="bg-white rounded border border-gray-400 w-full focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-2" id="number" type="number" placeholder="contact number" required>
         </div>
         <div class="mb-4">
-          <textarea class="bg-white rounded border border-gray-400 w-full focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none" name="message" id="message" placeholder="Message" required></textarea>
+          <textarea class="bg-white rounded border border-gray-400 w-full focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none" id="message" placeholder="Message" required></textarea>
         </div>
         <div class="flex items-center justify-between">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0" id="tfai-form-button" type="submit">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0" type="submit">
             <i class="fa fa-envelope"></i> Send
           </button>
         </div>
+        <p class="text-orage-600" id="my-form-status"></p>
       </form>
+      <!--<p class="text-xs text-gray-500 mt-3"></p>-->
     </div>
   </div>
 </section>
@@ -528,71 +545,6 @@
 <!--footer start-->
 
 <footer class="text-gray-700 body-font">
-  <!--<div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap md:text-left text-center order-first">
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
-        <div class="flex xl:flex-no-wrap md:flex-no-wrap lg:flex-wrap flex-wrap justify-center md:justify-start">
-          <input class="w-40 sm:w-auto bg-gray-100 rounded xl:mr-4 lg:mr-0 sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base py-2 px-4" placeholder="Placeholder" type="text">
-          <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Button</button>
-        </div>
-        <p class="text-gray-500 text-sm mt-2 md:text-left text-center">Bitters chicharrones fanny pack
-          <br class="lg:block hidden">waistcoat green juice
-        </p>
-      </div>
-    </div>
-  </div>-->
   <div class="bg-gray-200">
     <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -643,6 +595,8 @@
 </div>
 <!--image modal end-->
 
+<script src="js/glide.js"></script>
+<script src="js/glide.min.js"></script>
 
 <script>
   window.addEventListener("DOMContentLoaded", function() {
@@ -696,6 +650,12 @@
   var offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
   offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
   scrollDuration = 700;
+</script>
+
+<script>
+
+  new Glide('.glide').mount()
+
 </script>
     
 </body>
