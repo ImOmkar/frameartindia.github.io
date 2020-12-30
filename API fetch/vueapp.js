@@ -16,6 +16,7 @@ new Vue({
                 this.starwarsallfilms=data;
             })
         }
-   }
+
+    }
 
 })
