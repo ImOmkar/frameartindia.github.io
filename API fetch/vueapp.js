@@ -9,7 +9,7 @@ new Vue({
 
         async getAllStarWarsFilms(){
 
-            fetch('https://graph.instagram.com/me/media?fields=media_url&access_token={{ secrets.DISPLAY_ACCESS_TOKEN}}')
+            fetch('https://graph.instagram.com/me/media?fields=media_url&access_token=$DISPLAY_ACCESS_TOKEN')
             .then(response=>response.json())
 
             .then(data=>{
